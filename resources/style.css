@@ -26,7 +26,7 @@ body{
 }
 
 .nav-bar{
-    height: 15vh;
+    height: 66px;
     width: 100%;
     padding: 1rem 4rem;
     position: fixed;
@@ -65,13 +65,112 @@ body{
     color: white;
 }
 
-.nav-bar>a {
+/* .nav-bar ul li a:nth-of-type(3) {
     display: flex;
     align-items: center;
     padding: 0.2rem 1.2rem;
     background-color: white;
     border: 1px solid white;
     border-radius: 2rem;
+} */
+
+.nav_hamburger{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    z-index: 2;
+    display: none;
+}
+
+.nav_hamburger::before,
+.nav_hamburger::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0;
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+}
+
+.nav_hamburger::after{
+    margin: -10px 0;
+}
+.mobile-nav-bar ul {
+    display: none;
+}
+
+@media (max-width: 900px){
+    .nav_hamburger{
+        display: inline;
+    }
+
+    .mobile-nav-bar{
+        height: 100%;
+        width: 100%;
+        padding: 8% 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    #mobile-nav-bar-close{
+        padding: 0.5%;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        font-size: 2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgba(255,255,255, 0.7);
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 4rem;
+    }
+
+    .mobile-nav-bar .logo{
+        font-size: 3rem;
+        color: white;
+        z-index: 2;
+    }
+
+    .mobile-nav-bar ul {
+        height: 50%;
+        margin: 10% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-nav-bar ul li {
+
+    }
+
+    .mobile-nav-bar a{
+        color: white;
+    }
+
+    .nav-bar *{
+        position: fixed;
+        z-index: -1;
+    }
+
+    .nav-bar *{
+        display: none;
+    }
 }
 
 /* BANNER STARTS HERE */
