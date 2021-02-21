@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 
@@ -43,20 +44,24 @@
             <h1 id="banner_heading">Vancouver Bawarchi</h1>
             <hr id="banner_heading_hr">
             <p id="banner_tagline">Where taste meets divinity</p>
+            <div id="banner_button_div">
+                <button class="banner_button">View Menu</button>
+                <button class="banner_button">Order Now</button>
+            </div>
+
         </section>
     </header>
-
     <main>
         <!-- Our Menu -->
         <div id="menu_div">
             <div id="menu_section_left">
                 <h2>Menu Items</h2>
                 <ul>
-                    <li>Veg Biryani</li>
-                    <li>Chicken Biryani</li>
-                    <li>Mutton Biryani <span> &nbsp;&nbsp;&nbsp; (Family pack)</span></li>
-                    <li>Chicken Biryani <span> &nbsp;&nbsp;&nbsp; (Family Pack)</span></li>
-                    <li>Chicken Biryani <span> &nbsp;&nbsp;&nbsp; (Jumbo pack)</span></li>
+                    <li class="menu_item">Veg Biryani</li>
+                    <li class="menu_item">Chicken Biryani</li>
+                    <li class="menu_item">Mutton Biryani <span>(Family pack)</span></li>
+                    <li class="menu_item">Chicken Biryani <span>(Family Pack)</span></li>
+                    <li class="menu_item">Chicken Biryani <span>(Jumbo pack)</span></li>
                 </ul>
             </div>
             <div id="menu_section_right">
@@ -82,9 +87,65 @@
                     non distinctio veritatis. Vitae, amet.</p>
             </div>
         </div>
+
+        <!-- Testimonials -->
+        <div id="testimonial_div">
+            <h3>Testimonials</h3>
+            <hr>
+
+            <h2>What People Say About Us</h2>
+            <div class="testimonial_list">
+
+                <div class="testimonial_card">
+                    <p class="testimonial_title">Amazing Taste</p>
+                    <div class="testimonial_stars_div">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit cum repellat expedita eos provident possimus.</p>
+                </div>
+                <div class="testimonial_card">
+                    <p class="testimonial_title">Amazing Taste</p>
+                    <div class="testimonial_stars_div">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit cum repellat expedita eos provident possimus.</p>
+                </div>
+                <div class="testimonial_card">
+                    <p class="testimonial_title">Amazing Taste</p>
+                    <div class="testimonial_stars_div">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit cum repellat expedita eos provident possimus.</p>
+                </div>
+                <div class="testimonial_card">
+                    <p class="testimonial_title">Amazing Taste</p>
+                    <div class="testimonial_stars_div">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit cum repellat expedita eos provident possimus.</p>
+                </div>
+
+            </div>
+        </div>
         <div style="height: 500px;"></div>
     </main>
 </body>
-<script src="./resources//main.js"></script>
-
+<script src="./libraries/jquery-3.4.1.js"></script>
+<script src="./resources/main.js"></script>
 </html>
