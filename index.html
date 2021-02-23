@@ -36,7 +36,7 @@
                 <li><a href="#">Food for Thought</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            
+
             <div class="nav_hamburger"></div>
         </nav>
         <div class="mobile_nav_bar hide">
@@ -63,6 +63,7 @@
         </section>
     </header>
     <main>
+        <div class="spacer"></div>
         <!-- Our Menu -->
         <div id="menu_div">
             <div id="menu_section_left">
@@ -70,23 +71,22 @@
                 <ul>
                     <li class="menu_item">Veg Biryani</li>
                     <li class="menu_item">Chicken Biryani</li>
-                    <li class="menu_item">Mutton Biryani <span>(Family pack)</span></li>
-                    <li class="menu_item">Chicken Biryani <span>(Family Pack)</span></li>
-                    <li class="menu_item">Chicken Biryani <span>(Jumbo pack)</span></li>
+                    <li class="menu_item">Mutton Biryani</li>
                 </ul>
             </div>
 
             <div id="menu_section_right">
                 <div>
                     <div id="menu_item_img_div">
-                        <img class="menu_item_img" src="./resources//images/veg_biryani.jpg" alt="">
+                        <div>
+                            <img class="menu_item_img" src="./resources//images/veg_biryani.jpg" alt="">
+                        </div>
                         <div>
                             <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
                             <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
                         </div>
                     </div>
-
-                    <div>
+                    <div id="ingredients_div">
                         <ul id="menu_item_ingredients">
                             <li>ingredients 1</li>
                             <li>ingredients 2</li>
@@ -95,24 +95,47 @@
                         </ul>
                     </div>
                 </div>
-                <p id="menu_item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ipsam,
-                    soluta nesciunt debitis consequuntur velit cumque architecto nisi et mollitia voluptates aspernatur
-                    reiciendis autem eius! Expedita vel quo, tempora voluptate corrupti in accusantium vero doloribus
-                    non distinctio veritatis. Vitae, amet.</p>
+                <div id="menu_item_description_div">
+                    <!-- <div id="add_to_cart_div">
+                        <p class="add_to_cart_title">Veg Biryani</p>
+                        <div>
+                            <label for="order_quantity">Qty: </label>
+                            <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div> -->
+
+                    <p id="menu_item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ipsam,
+                        soluta nesciunt debitis consequuntur velit cumque architecto nisi et mollitia voluptates
+                        aspernatur
+                        reiciendis autem eius! Expedita vel quo, tempora voluptate corrupti in accusantium vero
+                        doloribus
+                        non distinctio veritatis. Vitae, amet.</p>
+                </div>
 
             </div>
+
         </div>
+
+        <div class="spacer"></div>
 
         <!-- Testimonials -->
         <div id="testimonial_div">
-            <h3>Testimonials</h3>
-            <!-- <hr> -->
+            <h3>Testimonials
+                <hr>
+            </h3>
+
 
             <h2>What People Say About Us</h2>
             <div class="testimonial_list">
 
                 <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
+                    <p class="testimonial_title">Amazing Taste1</p>
                     <div class="testimonial_stars_div">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,7 +146,7 @@
                         Reprehenderit cum repellat expedita eos provident possimus.</p>
                 </div>
                 <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
+                    <p class="testimonial_title">Amazing Taste2</p>
                     <div class="testimonial_stars_div">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -134,7 +157,7 @@
                         Reprehenderit cum repellat expedita eos provident possimus.</p>
                 </div>
                 <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
+                    <p class="testimonial_title">Amazing Taste3</p>
                     <div class="testimonial_stars_div">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -145,7 +168,7 @@
                         Reprehenderit cum repellat expedita eos provident possimus.</p>
                 </div>
                 <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
+                    <p class="testimonial_title">Amazing Taste4</p>
                     <div class="testimonial_stars_div">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -159,9 +182,8 @@
             </div>
         </div>
 
-        <div style="height: 500px; width: 60%; margin: 0 auto; position: relative; background-color: yellow;">
-            <div class="nav_hamburger"></div>
-        </div>
+        <!-- <div style="height: 500px; width: 60%; margin: 0 auto; position: relative; background-color: yellow;">
+        </div> -->
     </main>
 </body>
 <script src="./libraries/jquery-3.4.1.js"></script>
