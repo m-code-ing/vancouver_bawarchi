@@ -16,6 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
 
+    <!-- Google Fonts: Crimson Text -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -53,51 +58,53 @@
         <!-- Banner -->
         <section id="banner">
             <div class="overlay"></div>
-            <h1 id="banner_heading">Vancouver Bawarchi</h1>
-            <hr id="banner_heading_hr">
-            <p id="banner_tagline">Where taste meets divinity</p>
+            <div class="banner_heading_div">
+                <h1 id="banner_heading">Vancouver Bawarchi</h1>
+                <hr id="banner_heading_hr">
+                <p id="banner_tagline">Where taste meets divinity</p>
+            </div>
             <div id="banner_button_div">
                 <button class="banner_button">View Menu</button>
                 <button class="banner_button">Order Now</button>
             </div>
         </section>
-    </header>
-    <main>
-        <!-- Our Menu -->
+        </header>
+        <main>
+            <!-- Our Menu -->
 
-        <!-- Menu Style1 -->
-        <div id="menu_div">
-            <div id="menu_section_left">
-                <h2>Menu Items</h2>
-                <ul>
-                    <li class="menu_item">Veg Biryani</li>
-                    <li class="menu_item">Chicken Biryani</li>
-                    <li class="menu_item">Mutton Biryani</li>
-                </ul>
-            </div>
-
-            <div id="menu_section_right">
-                <div>
-                    <div id="menu_item_img_div">
-                        <div>
-                            <img class="menu_item_img" src="./resources//images/veg_biryani.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
-                            <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
-                        </div>
-                    </div>
-                    <div id="ingredients_div">
-                        <ul id="menu_item_ingredients">
-                            <li>ingredients 1</li>
-                            <li>ingredients 2</li>
-                            <li>ingredients 3</li>
-                            <li>ingredients 4</li>
-                        </ul>
-                    </div>
+            <!-- Menu Style1 -->
+            <div id="menu_div">
+                <div id="menu_section_left">
+                    <h2>Menu Items</h2>
+                    <ul>
+                        <li class="menu_item">Veg Biryani</li>
+                        <li class="menu_item">Chicken Biryani</li>
+                        <li class="menu_item">Mutton Biryani</li>
+                    </ul>
                 </div>
-                <div id="menu_item_description_div">
-                    <!-- <div id="add_to_cart_div">
+
+                <div id="menu_section_right">
+                    <div>
+                        <div id="menu_item_img_div">
+                            <div>
+                                <img class="menu_item_img" src="./resources//images/veg_biryani.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
+                                <img class="menu_item_img" src="./resources//images/banner_img.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="ingredients_div">
+                            <ul id="menu_item_ingredients">
+                                <li>ingredients 1</li>
+                                <li>ingredients 2</li>
+                                <li>ingredients 3</li>
+                                <li>ingredients 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="menu_item_description_div">
+                        <!-- <div id="add_to_cart_div">
                         <p class="add_to_cart_title">Veg Biryani</p>
                         <div>
                             <label for="order_quantity">Qty: </label>
@@ -111,120 +118,136 @@
                         <button>Add to Cart</button>
                     </div> -->
 
-                    <p id="menu_item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ipsam,
-                        soluta nesciunt debitis consequuntur velit cumque architecto nisi et mollitia voluptates
-                        aspernatur
-                        reiciendis autem eius! Expedita vel quo, tempora voluptate corrupti in accusantium vero
-                        doloribus
-                        non distinctio veritatis. Vitae, amet.</p>
+                        <p id="menu_item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+                            ipsam,
+                            soluta nesciunt debitis consequuntur velit cumque architecto nisi et mollitia voluptates
+                            aspernatur
+                            reiciendis autem eius! Expedita vel quo, tempora voluptate corrupti in accusantium vero
+                            doloribus
+                            non distinctio veritatis. Vitae, amet.</p>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <!-- Menu Style 2 -->
+            <div class="menu_wrapper">
+                <h2 class="section_title">Biryanis</h2>
+                <div class="menu_container">
 
-        <!-- Menu Style 2 -->
-        <div class="menu_container">
-            <div class="menu_card">
-                <div class="menu_card_left">
-                    <div>
-                        <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
+                    <div class="menu_card">
+                        <div class="menu_card_left">
+                            <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
+                        </div>
+                        <div class="menu_card_right">
+                            <h2 class="menu_item_title">Veg Biryani</h2>
+                            <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
+                            <div class="menu_item_order_div">
+                                <p class="menu_item_price">Price : $14</p>
+                                <a class="add_to_btn" href="">Add to plate</a>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <div class="menu_card">
+                        <div class="menu_card_left">
+                            <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
+                        </div>
+                        <div class="menu_card_right">
+                            <h2 class="menu_item_title">Chicken Biryani</h2>
+                            <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
+                            <div class="menu_item_order_div">
+                                <p class="menu_item_price">Price : $14</p>
+                                <a class="add_to_btn" href="">Add to plate</a>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+
+                    <div class="menu_card">
+                        <div class="menu_card_left">
+                            <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
+                        </div>
+                        <div class="menu_card_right">
+                            <h2 class="menu_item_title">Mutton Biryani</h2>
+                            <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
+                            <div class="menu_item_order_div">
+                                <p class="menu_item_price">Price : $14</p>
+                                <a class="add_to_btn" href="">Add to plate</a>
+                            </div>
+    
+    
+                        </div>
                     </div>
                 </div>
-                <div class="menu_card_right">
-                    <h2 class="menu_item_title">Veg Biryani</h2>
-                    <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
-                    <p class="menu_item_price">Price : $14</p>
+            </div>
+            
+
+            <!-- Testimonials -->
+            <div id="testimonial_div">
+                <h3>Testimonials
+                    <hr>
+                </h3>
+
+
+                <h2>What People Say About Us</h2>
+
+                <div class="testimonial_list">
+                    <div class="testimonial_card">
+                        <p class="testimonial_title">Amazing Taste</p>
+                        <div class="testimonial_stars_div">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit cum repellat expedita eos provident possimus.</p>
+                    </div>
+                    <div class="testimonial_card">
+                        <p class="testimonial_title">Amazing Taste</p>
+                        <div class="testimonial_stars_div">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit cum repellat expedita eos provident possimus.</p>
+                    </div>
+                    <div class="testimonial_card">
+                        <p class="testimonial_title">Amazing Taste</p>
+                        <div class="testimonial_stars_div">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit cum repellat expedita eos provident possimus.</p>
+                    </div>
+                    <div class="testimonial_card">
+                        <p class="testimonial_title">Amazing Taste</p>
+                        <div class="testimonial_stars_div">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit cum repellat expedita eos provident possimus.</p>
+                    </div>
 
                 </div>
             </div>
-            <div class="menu_card">
-                <div class="menu_card_left">
-                    <div>
-                        <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
-                    </div>
-                </div>
-                <div class="menu_card_right">
-                    <h2 class="menu_item_title">Chicken Biryani</h2>
-                    <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
-                    <p class="menu_item_price">Price : $14</p>
 
-                </div>
-            </div>
-            <div class="menu_card">
-                <div class="menu_card_left">
-                    <div>
-                        <img class="menu_card_left_img" src="./resources//images/veg_biryani.jpg" alt="">
-                    </div>
-                </div>
-                <div class="menu_card_right">
-                    <h2 class="menu_item_title">Mutton Biryani</h2>
-                    <p class="menu_item_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis nostrum hic quae dolore natus odio assumenda repellendus qui ex?</p>
-                    <p class="menu_item_price">Price : $14</p>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials -->
-        <div id="testimonial_div">
-            <h3>Testimonials
-                <hr>
-            </h3>
-
-
-            <h2>What People Say About Us</h2>
-
-            <div class="testimonial_list">
-                <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
-                    <div class="testimonial_stars_div">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit cum repellat expedita eos provident possimus.</p>
-                </div>
-                <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
-                    <div class="testimonial_stars_div">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit cum repellat expedita eos provident possimus.</p>
-                </div>
-                <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
-                    <div class="testimonial_stars_div">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit cum repellat expedita eos provident possimus.</p>
-                </div>
-                <div class="testimonial_card">
-                    <p class="testimonial_title">Amazing Taste</p>
-                    <div class="testimonial_stars_div">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit cum repellat expedita eos provident possimus.</p>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
+        </main>
 </body>
 <script src="./libraries/jquery-3.4.1.js"></script>
 <script src="./resources/main.js"></script>
