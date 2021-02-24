@@ -350,6 +350,63 @@ ul, li {
 
 /* MENU ENDS HERE */
 
+
+/* Menu Style 2 Starts Here */
+
+.menu_container{
+    height: fit-content;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu_card{
+    height: fit-content;
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_card_left{
+    height: auto;
+    width: 33.33%;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+}
+
+.menu_card_right{
+    height: auto;
+    width: 66.66%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.menu_card_left>div>img{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+}
+
+.menu_item_description{
+    margin: 1rem 0;
+}
+
+/* Menu Style 2 Ends Here */
+
 /* Add to Order Card Starts Here */
 
 #add_to_cart_div {
